@@ -1,0 +1,20 @@
+name: prependotron
+version: 0.0.0
+
+ghc-options: >-
+  -Wall
+  -Wincomplete-record-updates
+  -Wincomplete-uni-patterns
+
+default-extensions:
+  - ApplicativeDo
+  - MonoLocalBinds
+  - NoMonomorphismRestriction
+
+dependencies:
+  - base >= 4.9.1.0 && < 4.10
+  - parallel >= 3.2.1.1 && < 3.3
+  - vector >= 0.12.0.1 && < 0.13
+
+library:
+  source-dirs: src
